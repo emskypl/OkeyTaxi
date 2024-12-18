@@ -4,210 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>STW Taxi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Okey Taxi</title>
 </head>
 
 <body>
-    <header>
-        <menu>
-            <a>Strona Główna</a>
-            <a>O nas</a>
-            <a>Cennik</a>
-            <a>Praca</a>
-            <a>Kontakt</a>
-        </menu>
-        <div class="main-information-container">
-            <img src="./logo.png" alt="logo" width="100%" style="padding: 100px; width: 33%;" />
-            <h1>Okey Taxi Kołobrzeg</h1>
-            <p> 506 13 12 12<br>(94) 19666</p>
-        </div>
-
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <img src="logo.png" alt="Okey Taxi Logo" width="250px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Usługi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-cars">Nasze pojazdy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opinie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Praca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main>
-        <div class="triple-column">
-            <div class="inside-triple-column-white">
-                <h3>Profesjonalizm</h3>
-                <p>Pracują tylko kierowcy z licencją na przewóz osób i rzeczy, z dużym, wieloletnim doświadczeniem.</p>
+    <section class="jumbotron text-center bg-light">
+        <div class="container">
+            <h1 class="display-3">Okey Taxi</h1>
+            <p class="lead">Szybko Tanio Wygodnie</p>
+            <a class="btn btn-outline-primary" href="tel:19666" role="button">Zamów</a>
+        </div>
+    </section>
+
+    <div id="services" class="section-title">Usługi</div>
+    <section class="services">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Dowóz na lotniska</h2>
+                        <p class="card-text">Dowozimy na lotnisko. Umów się wcześniej.</p>
+                    </div>
+                </div>
             </div>
-            <div class="inside-triple-column-gray">
-                <h3>Jakość</h3>
-                <p>To szybki dojazd pod wskazany przez Klienta adres, taksówką czystą i zadbaną tak, by czas Państwa
-                    oczekiwania nie był dłuższy niż 5-7 minut (w szczególnych sytuacjach, np. korki- do 10 minut).</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Przewozy</h2>
+                        <p class="card-text">Przejazdy w obrębie całego miasta i okolic.</p>
+                    </div>
+                </div>
             </div>
-            <div class="inside-triple-column-white">
-                <h3>Uczciwość</h3>
-                <p>Przejazd najkrótszą trasą z prawidłowo włączonym taksometrem przy uwzględnieniu odpowiednich rabatów.
-                </p>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Obsługa imprez</h2>
+                        <p class="card-text">Rozwieziemy Twoich gości po imprezie.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="price-container">
-            <div class="price-table">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <span class="product-title-resp">Cennik</span>
-                        </tr>
-                        <tr class="product-tile-row">
-                            <th class="product-feature"></th>
-                            <th class="product">0%</th>
-                            <th class="product">5%</th>
-                            <th class="product">10%</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="3">Opłata początkowa</td>
-                        </tr>
-                        <tr class="compare-row">
-                            <td>Opłata początkowa</td>
-                            <td>
-                                <span>10,00 zł</span>
-                            </td>
-                            <td>
-                                <span>9,50 zł<span>
-                            </td>
-                            <td>
-                                <span>9,00 zł</span>
-                            </td>
+    </section>
 
-
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Opłata za 1 km na taryfie I | 6:00 - 22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Opłata za 1 km na taryfie I | 6:00 - 22:00</td>
-                            <td>
-                                <span>4,00 zł</span>
-                            </td>
-                            <td>
-                                <span>3,80 zł</span>
-
-                            </td>
-                            <td>
-                                <span>3,60 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Opłata za 1 km na taryfie I | 22:00 - 6:00</td>
-                        </tr>
-                        <tr>
-                            <td>Opłata za 1 km na taryfie I | 22:00 - 6:00</td>
-                            <td>
-                                <span>6,00 zł</span>
-                            </td>
-                            <td>
-                                <span>5,70 zł</span>
-
-                            </td>
-                            <td>
-                                <span>5,40 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Opłata za 1 km na taryfie III</td>
-                        </tr>
-                        <tr>
-                            <td>Opłata za 1 km na taryfie III</td>
-                            <td>
-                                <span>8,00 zł</span>
-                            </td>
-                            <td>
-                                <span>7.60 zł</span>
-
-                            </td>
-                            <td>
-                                <span>7.20 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Opłata za 1 km na taryfie IV</td>
-                        </tr>
-                        <tr>
-                            <td>Opłata za 1 km na taryfie IV</td>
-                            <td>
-                                <span>12,00 zł</span>
-                            </td>
-                            <td>
-                                <span>11,40 zł</span>
-
-                            </td>
-                            <td>
-                                <span>10,80 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Opłata za 1 km na taryfie I | 22:00 - 6:00</td>
-                        </tr>
-                        <tr>
-                            <td>Opłata za 1 godz. postoju</td>
-                            <td>
-                                <span>60,00 zł</span>
-                            </td>
-                            <td>
-                                <span>57,00 zł</span>
-
-                            </td>
-                            <td>
-                                <span>54,00 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Jednostka taryfowa</td>
-                        </tr>
-                        <tr>
-                            <td>Jednostka taryfowa</td>
-                            <td>
-                                <span>2,00 zł</span>
-                            </td>
-                            <td>
-                                <span>1,90 zł</span>
-
-                            </td>
-                            <td>
-                                <span>1,80 zł</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <a href="https://zavistar.com/" class="get-started-btn">Zadzwoń
-                                    <span class="hide-mobile"></span>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="https://zavistar.com/" class="get-started-btn">Zadzwoń
-                                    <span class="hide-mobile"></span>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="https://zavistar.com/" class="get-started-btn">Zadzwoń
-                                    <span class="hide-mobile"></span>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div id="our-cars" class="section-title bg-light">Nasze pojazdy</div>
+    <section class="fleet bg-light">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car1.jpg" alt="Car 1" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Sedan</h2>
+                        <p class="card-text">Wygodne przejazdy do 4 osób.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car2.jpg" alt="Car 2" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Minivan</h2>
+                        <p class="card-text">Nasze minivany bezpiecznie przewozą do 7 pasazerów.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car3.jpg" alt="Car 3" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Komfort</h2>
+                        <p class="card-text">Nasze komfortowe auta zadowolą najbardziej wymagającego klienta.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
+    <div class="section-title">Opinie</div>
+    <section class="testimonials">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Klient A</h2>
+                        <p class="card-text">Najlepsze taxi w Kołobrzegu. Serdecznie polecam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Klient B</h2>
+                        <p class="card-text">Niezawodni i zawsze na czas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Klient C</h2>
+                        <p class="card-text">Tak jak mówi slogan, szybko, tanio, wygodnie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-light">&copy; 2025 Okey Taxi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>

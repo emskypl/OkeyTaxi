@@ -1,0 +1,290 @@
+$primary: #eb1d2a;
+$secondary: #fff;
+$dark: #333;
+@import './node_modules/bootstrap/scss/bootstrap';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Section */
+/* .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #eb1d2a;
+      color: #fff;
+  }
+  
+  .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+      justify-content: left;
+  }
+  
+  .header .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      justify-content: right;
+  }
+  
+  .header .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+  } */
+
+.header {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar-nav {
+	margin-left: auto;
+}
+
+.nav-item {
+	margin-right: 20px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	color: $dark;
+}
+
+.navbar-toggler {
+	border: none;
+	padding: 0.5rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+	font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	background-image: linear-gradient(to bottom, $primary, #fff);
+}
+
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.hero .content h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.hero .content p {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.hero .content .cta {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Services Section */
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.services .service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.services .service h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.services .service p {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Fleet Section */
+.fleet {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.fleet .car {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.fleet .car img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.fleet .car h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.fleet .car p {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.testimonials .testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	margin: 20px;
+	width: 25%;
+	border: 1px solid #ddd;
+}
+
+.testimonials .testimonial img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.testimonials .testimonial h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.testimonials .testimonial p {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.footer .social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.footer .social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .social a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.footer .social a:hover {
+	color: #337ab7;
+}
+
+.footer p {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.footer .copyright {
+	font-size: 12px;
+	color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

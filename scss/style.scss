@@ -1,0 +1,203 @@
+@use './colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.nav-overlay {
+	background-color: $primary;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	background-color: $primary;
+}
+
+.logo {
+	margin: 20px;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.nav-items {
+	display: none;
+}
+
+.hamburger {
+	margin: 20px;
+	color: $secondary;
+	font-size: 2rem;
+}
+
+/* Header Section */
+header {
+	background-color: $dark;
+	height: 250px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: $dark;
+	color: $secondary;
+}
+
+.hero a {
+	color: $secondary;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+.hero i {
+	font-size: 1.5rem;
+}
+
+/* Footer Section */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.footer .social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Main */
+
+/* Services Section */
+
+.services h1 {
+	margin: 10px 0;
+	border: 2px solid $primary;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.services-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.services-items p {
+	text-align: center;
+	padding: 0 20px;
+}
+
+.services-item {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.services-item-description {
+	width: 100%;
+	height: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	color: #fff;
+}
+
+.services-item-description h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.airport {
+	background-image: url('../images/airbus-4454338_640.jpg');
+}
+
+.taxicar {
+	background-image: url('../images/taxi-7856666_640.jpg');
+}
+
+.party {
+	background-image: url('../images/event-party-3005668_640.jpg');
+}
+.footer .social a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.footer .social a:hover {
+	color: #337ab7;
+}
+
+.footer p {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.footer .copyright {
+	font-size: 12px;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+	.nav-items {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 66%;
+	}
+
+	.nav-items a {
+		color: #fff;
+		text-decoration: none;
+		transition: color 0.3s;
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 1.5rem;
+	}
+
+	.nav-items a:hover {
+		color: #000;
+	}
+
+	.logo img {
+		width: 250px;
+	}
+}

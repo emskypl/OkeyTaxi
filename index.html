@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
+<!-- 1. Animacja przy numerze telefonu.
+     2. Obramowanie przy h2, tytuły w sekcjach -->
+
 <body>
     <div class="nav-overlay">
         <nav class="navbar wrapper">
@@ -32,13 +35,14 @@
         <div class="hero wrapper">
             <div>
                 <i class="fas fa-phone" /></i>
-                <a class="hero-number" href="tel:19666">19666</a>
+                <a class="hero-number" href="tel:19666">(94) 19 666</a>
             </div>
             <div>
                 <i class="fas fa-phone"></i>
-                <a class="hero-number" href="tel:506131212">506131212</a>
+                <a class="hero-number" href="tel:506131212">506 131 212</a>
             </div>
         </div>
+        <div class="white-block white-block-left"></div>
     </header>
     <main>
         <section class="services wrapper" id="services">
@@ -55,99 +59,114 @@
                     <div class="services-item-description">
                         <h2>Przewozy</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, et illo
-                            corporis provident molestiae nulla tempore blanditiis natus harum </p>
+                            corporis provident molestiae nulla </p>
                     </div>
                 </div>
                 <div class="services-item party">
                     <div class="services-item-description">
                         <h2>Obsługa imprez</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iure,
-                            quisquam libero numquam laborum veniam consectetur recusandae facilis</p>
+                            quisquam libero numquam laborum</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="prices wrapper" id="prices">
+            <h1>Cennik</h1>
+            <table>
+                <thead>
+                    <th colspan="2">Cennik usług TAXI</th>
+                    <th class="price-column-header">CENA<br> PLN</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="counter-column">1</td>
+                        <td>
+                            <p>Opłata początkowa</p>
+                        </td>
+                        <td class="price-column">9,00</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">2</td>
+                        <td class="duo-column">
+                            <p>Opłata za 1km na taryfie I</p>
+                            <p>6:00 - 22:00</p>
+                        </td>
+                        <td class="price-column">3,60</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">3</td>
+                        <td class="duo-column">
+                            <p>Opłata za 1km na taryfie II</p>
+                            <p>22:00 - 6:00<br>
+                                niedziela i święta</p>
+                        </td>
+                        <td class="price-column">5,40</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">4</td>
+                        <td>
+                            <p>Opłata za 1km na taryfie III</p>
+                        </td>
+                        <td class="price-column">7,20</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">5</td>
+                        <td>
+                            <p>Opłata za 1km na taryfie IV</p>
+                        </td>
+                        <td class="price-column">10,80</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">6</td>
+                        <td>
+                            <p>Opłata za 1 godz. postoju</p>
+                        </td>
+                        <td class="price-column">54,00</td>
+                    </tr>
+                    <tr>
+                        <td class="counter-column">7</td>
+                        <td>
+                            <p>Jednostka taryfowa</p>
+                        </td>
+                        <td class="price-column">1,80</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+
+
+        <section class="contact" id="contact">
+            <div class="white-block white-block-right"></div>
+            <div class="wrapper">
+                <h1>Kontakt</h1>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(94) 19 666</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>506 131 212</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>okeytaxi19666@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>78-100 Kołobrzeg<br>ul. Sienkiewicza 10, p.106</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-
-    <!-- <main class="wrapper">
-
-        <div id="our-cars" class="section-title bg-light">Nasze pojazdy</div>
-        <div class="card-group justify-content-center gap-3"">
-                <div class=" col-md-3">
-            <div class="card">
-                 <img src="../images/car1.jpg" alt="Car 1" class="card-img-top"> 
-    <div class="card-body">
-        <h2 class="card-title">Sedan</h2>
-        <p class="card-text">Wygodne przejazdy do 4 osób.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <img src="../images/car2.jpg" alt="Car 2" class="card-img-top">
-    <div class="card-body">
-        <h2 class="card-title">Minivan</h2>
-        <p class="card-text">Nasze minivany bezpiecznie przewozą do 7 pasazerów.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-             <img src="../images/car3.jpg" alt="Car 3" class="card-img-top">
-            <div class="card-body">
-                <h2 class="card-title">Komfort</h2>
-                <p class="card-text">Nasze komfortowe auta zadowolą najbardziej wymagającego klienta.</p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="section-title">Opinie</div>
-    <div class="card-group justify-content-center gap-3"">
-            <div class=" col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Klient A</h2>
-                <p class="card-text">Najlepsze taxi w Kołobrzegu. Serdecznie polecam!</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Klient B</h2>
-                <p class="card-text">Niezawodni i zawsze na czas.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Klient C</h2>
-                <p class="card-text">Tak jak mówi slogan, szybko, tanio, wygodnie.</p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div id="prices" class="section-title bg-light">Cennik</div>
-    <div class="card" style="border: 0px">
-        <img src="../images/okey-cennik-10-1200x978.png" alt="Price 1" class="card-img-top">
-    </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card" style="border: 0px">
-            <img src="../images/okey-cennik-5-1200x978.png" alt="Price 2" class="card-img-top">
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card" style="border: 0px">
-            <img src="../images/okey-cennik-full-1536x1252.png" alt="Price 3" class="card-img-top">
-        </div>
-    </div>
-    </main> -->
     <footer>
-        <div class="footer">
+        <div class="footer wrapper">
             <p>&copy; 2023 Okey Taxi. Wszelkie prawa zastrzeżone.</p>
             <div class="social">
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>

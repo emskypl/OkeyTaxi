@@ -79,8 +79,7 @@ header {
   background-color: #eb1d2a;
   height: 75vh;
 }
-
-.hero {
+header .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,14 +88,24 @@ header {
   background-color: #eb1d2a;
   color: #fff;
 }
-.hero a {
+header .hero a {
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
 }
-.hero i {
+header .hero i {
   font-size: 1.5rem;
   margin: 0 10px;
+}
+header .hero-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+header .hero-reviews i {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 /* Main */
@@ -219,6 +228,26 @@ header {
   background-color: rgb(237, 237, 237);
 }
 
+/* About Section */
+.aboutus {
+  scroll-margin: 20px;
+}
+
+.aboutus-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.aboutus-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+}
+
 /* Contact Section */
 .contact {
   scroll-margin: 20px;
@@ -237,15 +266,14 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #eb1d2a;
-  margin: 0 10px;
+  margin: 0;
 }
-
-.contact-item {
+.contact-items .contact-item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 20px 20px;
-  padding: 0 20px;
+  padding: 0 10px;
   height: 50px;
   width: 100%;
   background-color: #eb1d2a;
@@ -253,8 +281,14 @@ header {
   font-size: 1rem;
   text-align: center;
 }
-.contact-item i {
+.contact-items .contact-item i {
   margin-right: 10px;
+}
+.contact-items .contact-item .contact-item-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
 }
 
 /* Footer Section */
@@ -298,6 +332,58 @@ footer {
   color: #fff;
 }
 
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.contact-form .wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
 @media (min-width: 576px) {
   .prices table {
     width: 75%;
@@ -309,6 +395,9 @@ footer {
   .prices table tbody .counter-column,
   .prices table tbody .price-column {
     font-size: 1.2rem;
+  }
+  .contact-items .contact-item {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 768px) {
@@ -331,6 +420,9 @@ footer {
   }
   .nav-items a:hover {
     color: #000;
+  }
+  .hero a {
+    font-size: 2.5rem;
   }
   .services-items {
     flex-direction: row;
@@ -357,6 +449,17 @@ footer {
   .party {
     background-image: url("../images/event-party-3005668_1920.jpg");
   }
+  .contact-items {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .contact-items .contact-item:first-child {
+    width: 100%;
+  }
+  .contact-items .contact-item {
+    font-size: 1.1rem;
+    width: 35%;
+  }
 }
 @media (min-width: 992px) {
   .services-item-description h2 {
@@ -376,11 +479,24 @@ footer {
   .prices table tbody .price-column {
     font-size: 1.3rem;
   }
+  .contact-items .contact-item {
+    font-size: 1.1rem;
+    width: 25%;
+  }
 }
 @media (min-width: 1920px) {
   .wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .hero a {
+    font-size: 3rem;
+  }
+  .contact-items .contact-item {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */

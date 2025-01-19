@@ -310,9 +310,9 @@ header .hero-reviews div {
 .prices .prices-description p:last-of-type {
   margin-bottom: 20px;
 }
-.prices .prices-description div img {
+.prices .prices-description .prices-images img {
   width: 300px;
-  margin: 10px 0;
+  margin: 10px 10px;
   border: 0.1rem solid #fff;
 }
 
@@ -509,8 +509,11 @@ footer {
     width: 30%;
     margin: 0 10px;
   }
+  .services .services-items .services-item p {
+    font-size: 0.65rem;
+  }
   .services .services-items .services-item-extra {
-    width: 50%;
+    width: 90%;
   }
   .services-item-description h2 {
     font-size: 1rem;
@@ -543,11 +546,17 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .services-item-description h2 {
+  .services .services-items p {
+    font-size: 0.8rem;
+  }
+  .services .services-items .services-item-description h2 {
     font-size: 1.2rem;
   }
-  .services-item-description p {
+  .services .services-items .services-item-description p {
     font-size: 0.8rem;
+  }
+  .services .services-items .services-item-extra {
+    width: 80%;
   }
   .prices table {
     width: 60%;
@@ -559,6 +568,11 @@ footer {
   .prices table tbody .counter-column,
   .prices table tbody .price-column {
     font-size: 1.3rem;
+  }
+  .prices .prices-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .aboutus .aboutus-items {
     flex-direction: row;

@@ -312,10 +312,12 @@ header {
 			margin-bottom: 20px;
 		}
 
-		div img {
-			width: 300px;
-			margin: 10px 0;
-			border: 0.1rem solid $white;
+		.prices-images {
+			img {
+				width: 300px;
+				margin: 10px 10px;
+				border: 0.1rem solid $white;
+			}
 		}
 	}
 }
@@ -532,10 +534,14 @@ footer {
 			.services-item {
 				width: 30%;
 				margin: 0 10px;
+
+				p {
+					font-size: 0.65rem;
+				}
 			}
 
 			.services-item-extra {
-				width: 50%;
+				width: 90%;
 			}
 		}
 	}
@@ -579,13 +585,24 @@ footer {
 }
 
 @media (min-width: 992px) {
-	.services-item-description {
-		h2 {
-			font-size: 1.2rem;
-		}
+	.services {
+		.services-items {
+			p {
+				font-size: 0.8rem;
+			}
 
-		p {
-			font-size: 0.8rem;
+			.services-item-description {
+				h2 {
+					font-size: 1.2rem;
+				}
+
+				p {
+					font-size: 0.8rem;
+				}
+			}
+			.services-item-extra {
+				width: 80%;
+			}
 		}
 	}
 
@@ -603,6 +620,11 @@ footer {
 					font-size: 1.3rem;
 				}
 			}
+		}
+		.prices-images {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 

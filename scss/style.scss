@@ -1,10 +1,23 @@
 @use './colors' as *;
 @use './components' as *;
+@use './reset' as *;
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+a:visited {
+	text-decoration: none;
+	color: red;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+a:focus {
+	text-decoration: none;
+	color: yellow;
+}
+a:hover,
+a:active {
+	text-decoration: none;
+	color: black;
 }
 
 html {
@@ -81,12 +94,16 @@ header {
 
 	.hero-reviews {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin: 10px 0;
 		i {
 			font-size: 1.5rem;
 			color: $white;
+		}
+		div {
+			margin: 5px 0;
 		}
 	}
 }
@@ -141,7 +158,7 @@ header {
 
 	.services-item-extra {
 		width: 100%;
-		margin-bottom: 20px;
+		margin: 20px 0;
 		padding: 10px;
 		p {
 			font-size: 0.9rem;
@@ -163,8 +180,29 @@ header {
 	.party {
 		background-image: url('../images/event-party-3005668_640.jpg');
 	}
+
+	.services-download {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 
+.app-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.android {
+	width: 150px;
+	height: 65px;
+}
+
+.apple {
+	width: 150px;
+	height: 50px;
+}
 /* Prices Section */
 
 .prices {
@@ -284,25 +322,31 @@ header {
 
 /* About Section */
 .aboutus {
-	scroll-margin: 20px;
-	position: relative;
-	padding-top: 40px;
-	overflow: hidden;
-}
+	scroll-margin: 60px;
+	.aboutus-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 10px;
+	}
 
-.aboutus-items {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 10px;
-}
+	.aboutus-description {
+		margin-bottom: 20px;
+		padding: 10px;
+		width: 100%;
 
-.aboutus-item {
-	margin-bottom: 20px;
-	padding: 20px;
-	width: 100%;
-	height: 300px;
+		p {
+			text-align: center;
+			font-size: 0.9rem;
+		}
+	}
+
+	img {
+		width: 100%;
+		margin: 10px 0;
+		border: 0.2rem dotted $primary;
+	}
 }
 
 /* Contact Section */
@@ -358,27 +402,11 @@ footer {
 
 .footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding: 20px;
 	background-color: #333;
 	color: #fff;
-}
-
-.footer .social {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer .social a {
-	color: #fff;
-	text-decoration: none;
-	margin-left: 20px;
-}
-
-.footer .social a:hover {
-	color: #337ab7;
 }
 
 .footer p {
@@ -393,9 +421,8 @@ footer {
 }
 
 .contact-form {
-	background-color: #f9f9f9;
-	padding: 50px 0;
-	margin: 0 auto;
+	background-color: $white;
+	margin: 20px auto;
 }
 
 .contact-form .wrapper {
@@ -431,7 +458,7 @@ footer {
 
 .contact-form button {
 	padding: 10px 20px;
-	background-color: #007bff;
+	background-color: #4a4a4a;
 	color: #fff;
 	border: none;
 	border-radius: 4px;
@@ -441,7 +468,7 @@ footer {
 }
 
 .contact-form button:hover {
-	background-color: #0056b3;
+	background-color: #7a7a7a;
 }
 
 @media (min-width: 576px) {
@@ -498,13 +525,19 @@ footer {
 			font-size: 2.5rem;
 		}
 	}
-	.services-items {
-		flex-direction: row;
-	}
+	.services {
+		.services-items {
+			flex-direction: row;
+			flex-wrap: wrap;
+			.services-item {
+				width: 30%;
+				margin: 0 10px;
+			}
 
-	.services-item {
-		width: 33%;
-		margin: 10px;
+			.services-item-extra {
+				width: 50%;
+			}
+		}
 	}
 
 	.services-item-description {
@@ -569,6 +602,33 @@ footer {
 				.price-column {
 					font-size: 1.3rem;
 				}
+			}
+		}
+	}
+
+	.aboutus {
+		.aboutus-items {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.aboutus-description {
+			width: 66%;
+
+			p {
+				font-size: 1.1rem;
+			}
+		}
+
+		.aboutus-images {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 30%;
+				margin: 10px 10px;
+				border: 0.2rem dotted $primary;
 			}
 		}
 	}

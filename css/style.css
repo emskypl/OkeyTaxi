@@ -22,9 +22,30 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+a:focus {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
 }
 
 html {
@@ -99,6 +120,7 @@ header .hero i {
 }
 header .hero-reviews {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
@@ -106,6 +128,9 @@ header .hero-reviews {
 header .hero-reviews i {
   font-size: 1.5rem;
   color: #fff;
+}
+header .hero-reviews div {
+  margin: 5px 0;
 }
 
 /* Main */
@@ -151,7 +176,7 @@ header .hero-reviews i {
 }
 .services .services-item-extra {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0;
   padding: 10px;
 }
 .services .services-item-extra p {
@@ -169,6 +194,27 @@ header .hero-reviews i {
 }
 .services .party {
   background-image: url("../images/event-party-3005668_640.jpg");
+}
+.services .services-download {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.android {
+  width: 150px;
+  height: 65px;
+}
+
+.apple {
+  width: 150px;
+  height: 50px;
 }
 
 /* Prices Section */
@@ -272,25 +318,28 @@ header .hero-reviews i {
 
 /* About Section */
 .aboutus {
-  scroll-margin: 20px;
-  position: relative;
-  padding-top: 40px;
-  overflow: hidden;
+  scroll-margin: 60px;
 }
-
-.aboutus-items {
+.aboutus .aboutus-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 10px;
 }
-
-.aboutus-item {
+.aboutus .aboutus-description {
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  height: 300px;
+}
+.aboutus .aboutus-description p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.aboutus img {
+  width: 100%;
+  margin: 10px 0;
+  border: 0.2rem dotted #eb1d2a;
 }
 
 /* Contact Section */
@@ -343,27 +392,11 @@ footer {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: #333;
   color: #fff;
-}
-
-.footer .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer .social a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-.footer .social a:hover {
-  color: #337ab7;
 }
 
 .footer p {
@@ -378,9 +411,8 @@ footer {
 }
 
 .contact-form {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-  margin: 0 auto;
+  background-color: #fff;
+  margin: 20px auto;
 }
 
 .contact-form .wrapper {
@@ -416,7 +448,7 @@ footer {
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #4a4a4a;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -426,7 +458,7 @@ footer {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #7a7a7a;
 }
 
 @media (min-width: 576px) {
@@ -469,12 +501,16 @@ footer {
   .hero a {
     font-size: 2.5rem;
   }
-  .services-items {
+  .services .services-items {
     flex-direction: row;
+    flex-wrap: wrap;
   }
-  .services-item {
-    width: 33%;
-    margin: 10px;
+  .services .services-items .services-item {
+    width: 30%;
+    margin: 0 10px;
+  }
+  .services .services-items .services-item-extra {
+    width: 50%;
   }
   .services-item-description h2 {
     font-size: 1rem;
@@ -523,6 +559,27 @@ footer {
   .prices table tbody .counter-column,
   .prices table tbody .price-column {
     font-size: 1.3rem;
+  }
+  .aboutus .aboutus-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .aboutus .aboutus-description {
+    width: 66%;
+  }
+  .aboutus .aboutus-description p {
+    font-size: 1.1rem;
+  }
+  .aboutus .aboutus-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus .aboutus-images img {
+    width: 30%;
+    margin: 10px 10px;
+    border: 0.2rem dotted #eb1d2a;
   }
   .contact-items .contact-item {
     font-size: 1.1rem;

@@ -57,7 +57,30 @@ h1 {
 }
 
 .nav-items {
-	display: none;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.95);
+	width: 100%;
+	top: 150px;
+	z-index: 100;
+	opacity: 0;
+	transition: opacity 0.4s;
+	a {
+		text-align: center;
+		width: 100%;
+		border: 1px solid $primary;
+		color: $primary;
+		text-decoration: none;
+		padding: 20px 0;
+	}
+}
+
+.nav-items-active {
+	opacity: 1;
 }
 
 .hamburger {
@@ -503,19 +526,24 @@ footer {
 		display: none;
 	}
 	.nav-items {
+		position: static;
 		display: flex;
+		flex-direction: row;
 		justify-content: flex-end;
 		align-items: center;
 		width: 66%;
-	}
-
-	.nav-items a {
-		color: #fff;
-		text-decoration: none;
-		transition: color 0.3s;
-		margin-left: 20px;
-		margin-right: 20px;
-		font-size: 1.5rem;
+		opacity: 1;
+		background: none;
+		a {
+			border: none;
+			padding: 0;
+			color: $white;
+			text-decoration: none;
+			margin-left: 20px;
+			margin-right: 20px;
+			font-size: 1.5rem;
+			text-align: right;
+		}
 	}
 
 	.nav-items a:hover {

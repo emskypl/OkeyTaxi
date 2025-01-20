@@ -539,10 +539,12 @@ footer {
 			padding: 0;
 			color: $white;
 			text-decoration: none;
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 25px;
+			margin-right: 25px;
 			font-size: 1.5rem;
 			text-align: right;
+			transition: color 0.4s;
+			width: auto;
 		}
 	}
 
